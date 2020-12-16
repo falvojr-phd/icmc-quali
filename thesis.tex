@@ -12,7 +12,7 @@
 %   Curso                 = doutorado/mestrado
 %   Situação do trabalho  = pre-defesa/pos-defesa (exceto para qualificação)
 %   Versão para impressão = impressao
-\documentclass[doutorado, pos-defesa]{packages/icmc}
+\documentclass[qualificacao]{packages/icmc}
 
 % ---------------------------------------------------------------------------
 % Pacotes Opcionais
@@ -25,19 +25,30 @@
 \newcommand{\LatL}{0.42\textwidth}
 % ---------------------------------------------------------------------------
 
+% [Falvojr] Pacotes adicionais
+\usepackage{chronology}
+\usepackage{rotating}
+
+% [Falvojr] Comandos personalizados
+% [Falvojr] https://tex.stackexchange.com/a/198372/54244
+\newcommand\ytl[2]{
+\parbox[b]{6em}{\hfill{\color{black} #1}~$\cdots\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad \parbox[c]{9cm}{\vspace{7pt}\color{black}\raggedright #2\\[7pt]}\\[-3pt]}
+% [FalvoJr] Tipos de colunas personalizados
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 % Tanto na capa quanto nas folhas de rosto apenas a primeira letra da primeira palavra (ou nomes próprios) devem estar em letra maiúscula, todas as demais devem ser em letra minúscula.
-\tituloPT{Modelo de teses e dissertações em LaTeX do ICMC}
-\tituloEN{Model of theses and dissertations in LaTeX of the ICMC}
-\autor[Antonelli, H. L.]{Humberto Lidio Antonelli}
+\tituloPT{Uma Infraestrutura de Apoio ao Ensino e Aprendizagem de Línguas de Sinais}
+\tituloEN{An Infrastructure to Support the Teaching and Learning of Sign Languages}
+\autor[FalvoJr, V.]{Venilton Falvo Júnior}
 \genero{M} % Gênero do autor (M = Masculino / F = Feminino)
-\orientador[Orientadora]{Profa. Dra.}{Renata Pontin de Mattos Fortes}
+\orientador[Orientadora]{Profa. Dra.}{Ellen Francine Barbosa}
 %\coorientador{Prof. Dr.}{Fulano de Tal}
 \curso{CCMC}
-\data{01}{12}{2020} % Data do depósito
+\data{01}{01}{2021} % Data do depósito
 \idioma{PT} % Idioma principal do documento (PT = português / EN = inglês)
 % ---
 
@@ -50,16 +61,16 @@
 % conter no máximo 500 palavras
 % conter no mínimo 1 e no máximo 5 palavras-chave
 \textoresumo[brazil]{
-    Este trabalho é um breve modelo  para a escrita de monografias de qualificação, dissertações e teses utilizando o ambiente \LaTeX, de acordo com as normas exigidas pelo Instituto de Ciências Matemáticas e de Computação (ICMC), da Universidade de São Paulo (USP). Para a confecção deste modelo foi utilizado a última versão (1.9.7) do pacote de classes \textit{abnTeX2} que segue as normas da Associação Brasileira de Normas Técnicas. A elaboração de uma monografia, dissertação ou tese pode ser feita sobrescrevendo o conteúdo deste modelo. 
-    }{Modelo, Monografia de qualificação, Dissertação, Tese, Latex}
+    TODO
+    }{línguas de sinais, educação, tecnologias da informação e comunicação}
 
 
 % resumo em INGLÊS
 % conter no máximo 500 palavras
 % conter no mínimo 1 e no máximo 5 palavras-chave
 \textoresumo[english]{
-    This paper is a brief model for writing qualification monographs, dissertations and thesis using \LaTeX environment, in accordance with the standards required by the Institute of Mathematics and Computer Sciences (ICMC), University of São Paulo (USP). For making this model, the latest version (1.9.7) \textit{abnTeX2} classes package was used. This package follow the rules of the Brazilian Association of Technical Standards. A drafting a monograph, dissertation or thesis can be done by overwriting the contents of this model.
-    }{Template, Qualification monograph, Dissertation, Thesis, Latex}
+    TODO
+    }{sign languages, education, information and communication technologies}
 
 
 % ----------------------------------------------------------
@@ -84,16 +95,16 @@
 \incluilistadequadros
 
 % Inclui a lista de algoritmos
-\incluilistadealgoritmos
+%\incluilistadealgoritmos
 
 % Inclui a lista de códigos
-\incluilistadecodigos
+%\incluilistadecodigos
 
 % Inclui a lista de siglas e abreviaturas
-\incluilistadesiglas
+%\incluilistadesiglas
 
 % Inclui a lista de símbolos
-\incluilistadesimbolos
+%\incluilistadesimbolos
 
 % ----
 % Início do documento
@@ -104,38 +115,10 @@
 % ----------------------------------------------------------
 \textual
 
-\chapter{Introdução}
-\label{chapter:introducao}
-\input{tex/introducao}
-
-\chapter{Instalando o abnTeX2}
-\label{chapter:instalando-abntex}
-\input{tex/instalando-abntex}
-
-\chapter{Orientações gerais}
-\label{chapter:orientacoes-gerais}
-\input{tex/orientacoes-gerais}
-
-\chapter{Configuração dos elementos pré-textuais}
-\label{chapter:config-pre-textual}
-\input{tex/config-pre-textual}
-
-\chapter{Corpos flutuantes}
-\label{chapter:corpos-flutuantes}
-\input{tex/corpos-flutuantes}
-
-\chapter{Listas}
-\label{chapter:listas}
-\input{tex/listas}
-
-\chapter{Ferramentas úteis}
-\label{chapter:ferramentas-uteis}
-\input{tex/ferramentas-uteis}
-
-\chapter{Citações e referências}
-\label{chapter:citacoes}
-\input{tex/citacoes}
-
+\input{tex/capitulos/capitulo1}
+\input{tex/capitulos/capitulo2}
+\input{tex/capitulos/capitulo3}
+\input{tex/capitulos/capitulo4}
 
 % ---
 % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
@@ -157,10 +140,12 @@
 % GLOSSÁRIO
 % ---------------------------------------------------------------------
 
+%[FalvoJr] Glossário omitido
+
 % Arquivo que contém as definições que vão aparecer no glossário
-\input{tex/glossario}
+%\input{tex/glossario}
 % Comando para incluir todas as definições do arquivo glossario.tex
-\glsaddall
+%\glsaddall
 % Impressão do glossário
 \printglossaries
 
@@ -173,13 +158,7 @@
 % ---
 \begin{apendicesenv}
 
-    \chapter{Documento básico usando a classe \textit{icmc}}
-    \label{chapter:documento-basico}
-    \input{tex/appendix/documento-basico}
-    
-    \chapter{Configuração do programa JabRef}
-    \label{chapter:configuracao-jabref}
-    \input{tex/appendix/configuracao-jabref}
+\input{tex/apendices/estudos-primarios}
 
 \end{apendicesenv}
 % ---
@@ -192,13 +171,14 @@
 % ---
 % Inicia os anexos
 % ---
-\begin{anexosenv}
-
-    \chapter{Páginas interessantes na Internet} 
-    \label{chapter:paginas-interessantes}
-    \input{tex/annex/paginas-interessantes}
-
-\end{anexosenv}
+%[FalvoJr] Anexos omitidos
+%\begin{anexosenv}
+%
+%    \chapter{Páginas interessantes na Internet} 
+%    \label{chapter:paginas-interessantes}
+%    \input{tex/annex/paginas-interessantes}
+%
+%\end{anexosenv}
 % ---
 
 \end{document}
