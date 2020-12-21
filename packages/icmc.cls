@@ -93,7 +93,8 @@
 	openright,			% capitulos comecam em pagina impar (insere pagina vazia caso preciso)
 	twoside,			% para impressao em verso e anverso. Oposto a oneside
 	a4paper,			% tamanho do papel. 
-	chapter=TITLE		% titulos de capitulos convertidos em letras maiusculas
+	chapter=TITLE,		% titulos de capitulos convertidos em letras maiusculas
+	%sumario=tradicional % [FalvoJr] sumário tradicional (identado e capitulos sem todas as letras em maiúsculas)
 	]{abntex2}
 	
 
