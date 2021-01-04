@@ -453,7 +453,53 @@ De modo geral, é possível concluir que existem muitas pesquisas relevantes no 
 
 Tendo isso em vista, este projeto de doutorado pretende contribuir com o preenchimento de duas lacunas em particular: (i) a ausência de padrões de desenvolvimento de software que favoreçam o reúso de recursos educacionais e tecnológicos publicamente; e (ii) a carência de iniciativas com ênfase na educação bilíngue, a qual é fundamental para a inclusão social e desenvolvimento cultural dos surdos. Para isso, uma infraestrutura de apoio ao ensino e aprendizagem de línguas de sinais é proposta no \autoref{chapter:proposta}.
 
-Antes disso, as seções a seguir apresentam uma síntese dos resultados deste MS, com os principais estudos primários nas perspectivas internacional e nacional. Por meio dos quais, pretende-se também reiterar as lacunas supracitadas. Além disso, definições relevantes sobre o MS são retomadas, quando necessário, com o objetivo de contextualizar as análises e discussões em questão.
+Antes disso, as seções a seguir apresentam discussões sobre os resultados deste MS, considerando os principais estudos primários nas perspectivas internacional e nacional. Nesse sentido, a \autoref{ms:table:sintese-estudos} apresenta uma síntese para cada um desses estudos. Por meio dos quais, pretende-se também reiterar as lacunas supracitadas. Ademais, definições relevantes sobre o MS são retomadas, quando necessário, com o objetivo de contextualizar as análises e discussões em questão.
+
+\begin{small}
+\setlength\tabcolsep{0.1cm}
+\begin{longtable}{c|>{\centering\arraybackslash}p{2.75cm}|c|p{10cm}}
+\caption{Síntese dos estudos primários discutidos}
+\label{ms:table:sintese-estudos}
+\endfirsthead
+\endhead
+\hline
+\textbf{Estudo} & \textbf{Tipo de Solução} & \textbf{Avatar} & \textbf{Síntese} \\ \hline
+%\textit{BRA2} & Mobile & Não & Jogo baseado em mensagens instantâneas, chamado \textit{LibrasZap}. \\ \hline
+\textit{BRA6} & Mobile & Sim & Avaliação das soluções \textit{Hand Talk}, \textit{ProDeaf} e \textit{Rybená}, com foco na acessibilidade linguística para crianças surdas. \\ \hline
+\textit{BRA7} & Mobile & Sim & Avaliação dos aplicativos \textit{Hand Talk} e \textit{ProDeaf}, com base na teoria da aprendizagem multimídia e em heurísticas de usabilidade. \\ \hline
+\textit{BRA8} & Mobile & Sim & Avaliação dos aplicativos \textit{Hand Talk} e \textit{ProDeaf}, considerando os desafios relacionados à desambiguação. \\ \hline
+\textit{BRA10} & Mobile & Sim & Avaliação dos aplicativos \textit{Hand Talk} e \textit{ProDeaf}, ponderando a incidência de traduções baseadas em datilografia. \\ \hline
+\textit{BRA11} & Mobile & Sim & Avaliação dos aplicativos \textit{Hand Talk} e \textit{ProDeaf}, sob a perspectiva de surdos e ouvintes no curso de formação continuada de professores. \\ \hline
+\textit{BRA12} & Web & Não & Plataforma educacional intitulada \textit{SalaBil}, com ênfase na educação bilíngue (Português e LIBRAS). \\ \hline
+\textit{BRA16} & Mobile & Sim & Avaliação dos aplicativos \textit{Hand Talk} e \textit{ProDeaf}, considerando a análise de tradução automática Português-LIBRAS no contexto do edital do ENEM. \\ \hline
+\textit{BRA18} & Mobile & Sim & Avaliação dos aplicativos \textit{Hand Talk} e \textit{ProDeaf}, sob três perspectivas: multimidiática; multimodalidade; e quanto à socialização do sujeito surdo. \\ \hline
+\textit{BRA22} & Framework & Não & \textit{Framework CAP 1.0}, que visa a criação e uso de arquiteturas pedagógicas. \\ \hline
+\textit{BRA23} & Desktop & Não & Jogo idealizado para instigar o pensamento lógico de crianças surdas através de noções iniciais de robótica, denominado \textit{LibrasBot}. \\ \hline
+%\textit{BRA24} & Desktop & Não & A \textit{ForcaBRAS} é uma proposta de jogo para o ensino lúdico e intuitivo da representação do alfabeto e números usando LIBRAS. \\ \hline
+%\textit{BRA25} & RA & Não & Jogo da memória baseado em RA que visa apoiar usuários da LIBRAS no processo de aprendizagem. \\ \hline
+%\textit{BRA27} & Framework & Não & Apresentação da \textit{CAP-APL}, uma plataforma Web que disponibiliza recursos digitais através de APs (Português e LIBRAS). \\ \hline
+%\textit{BRA29} & RV & Sim & Dicionário temático visual-gestual baseado em RV para LIBRAS. \\ \hline
+\textit{BRA31} & RA/RV & Não & O jogo \textit{LibrAR} utiliza RA e RV para auxiliar no ensino do alfabeto e de algarismos numéricos em LIBRAS. \\ \hline
+%\textit{BRA33} & Mobile & Sim & Apresentação do aplicativo \textit{MIDOAA}, que embarca objetos de aprendizagem acessíveis para computação. \\ \hline
+%\textit{BRA34} & Mobile & Não & Jogo didático multidisciplinar para alunos surdos da Educação de Jovens e Adultos, chamado \textit{Quiz ClassRoom LIBRAS}. \\ \hline
+%\textit{BRA35} & Framework & Não & Plataforma \textit{Construtor de Arquiteturas Pedagógicas (CAP)} para a aprendizagem de LIBRAS. \\ \hline
+%\textit{BRA36} & Mobile & Não & Aplicativo educacional móvel baseado em técnicas de gamificação que tem o objetivo de apoiar o ensino-aprendizagem da LIBRAS. \\ \hline
+%\textit{BRA37} & Proposta de Design & Não & Modelo para educação inclusiva baseado na semiótica peirceana. \\ \hline
+\textit{BRA39} & Web & Não & Jogo \textit{Gestus}, que tem por objetivo apresentar a Libras à crianças ouvintes, com idades entre 7 a 10 anos, de forma lúdica e humanizada. \\ \hline
+%\textit{INT17} & Tradução de Máquina & Sim & Processamento de legendas para geração automática de linguagem de sinais. \\ \hline
+%\textit{INT34} & RV & Sim & Ambiente de RV com suporte a chats para deficientes auditivos e para o ensino de LIBRAS. \\ \hline
+\textit{INT47} & Tradução de Máquina & Sim & Solução baseada em tradução de máquina com suporte a avatares 3D, além de apresentar formalmente a concepção de um corpus com suporte a LIBRAS. \\ \hline
+\textit{INT53} & Desktop & Não & Solução embarcada em DVD para o ensino da Língua de Sinais Australiana (Auslan) com possibilidade de configurações regionais. \\ \hline
+\textit{INT56} & API & Não & Apresenta a arquitetura BDC-API, que traduz o material didático digital de MOOCs para surdos e cegos. \\ \hline
+\textit{INT73} & Web & Não & \textit{SignQuiz}, uma aplicação educacional Web para ensino da Língua de Sinais Indiana (ISL) através de uma técnica de reconhecimento automático de sinais. \\ \hline
+\textit{INT79} & Proposta de Design & Não & Proposta inicial de trabalho e metodologia que discorre sobre a criação de uma língua de sinais unificada, visando reduzir as barreiras sociais enfrentadas pelos surdos atualmente. \\ \hline
+%\textit{INT80} & Proposta de Design & Sim & Desenvolvimento de um avatar intérprete de LIBRAS. \\ \hline
+%\textit{INT92} & Mobile & Não & Jogo de adivinhação multiplayer para aprendizagem e prática da LIBRAS. \\ \hline
+\textit{INT86} & Legendas com Línguas de Sinais & Sim & Criação de legendas automáticas em línguas de sinais para recursos educacionais online, com o objetivo de torná-los acessíveis à comunidade de deficientes auditivos. \\ \hline
+\textit{INT88} & Óculos Inteligentes & Não & Uso do conceito de RA através de óculos inteligentes no apoio a pessoas com deficiência auditiva. \\ \hline
+\textit{INT109} & Desktop & Não & Jogo educacional para o aprendizado de operações matemáticas e números em LIBRAS, denominado \textit{MatLIBRAS Racing}. \\ \hline
+\end{longtable}
+\end{small}
 
 \subsection{Cenário Internacional}
 \label{ms:cenario-internacional}
@@ -518,7 +564,7 @@ Por fim, a busca manual, utilizada para a seleção dos estudos primários no co
 
 Nesta seção, foi apresentada uma visão geral das pesquisas realizadas sobre o uso da tecnologia para o ensino e aprendizagem por meio das línguas de sinais. Um MS baseado no conceito de QGS foi conduzido, resultando em 139 estudos selecionados \cite{FalvoJr2020_FIE}. Adicionalmente, a busca manual nacional foi utilizada como uma extensão dos estudos primários do MS, incluindo mais 46 publicações \cite{FalvoJr2020_SBIE}. Com isso, os artigos foram classificados de acordo com suas soluções tecnológicas, tópicos educacionais e línguas de sinais para responder as QP definidas. 
 
-Alguns dos principais estudos primários selecionados também foram discutidos, abordando temas como o nível de abstração e capacidade de escala global das soluções em âmbito nacional e internacional. Mais detalhes sobre os estudos primários discutidos podem ser encontradas no \autoref{apendice:estudos-primarios}, que tabula todas as contribuições abordadas nas Seções \ref{ms:cenario-internacional} e \ref{ms:cenario-nacional}. Além disso, o acesso aos estudos primários na íntegra e seus respectivos dados extraídos estão disponíveis pelo link: \url{https://bit.ly/SM-DataExtraction}.
+Alguns dos principais estudos primários selecionados também foram discutidos, abordando temas como o nível de abstração e capacidade de escala global das soluções em âmbito nacional e internacional. Para mais detalhes, conforme citado nesta seção, o acesso a todos os estudos primários e seus respectivos dados extraídos estão disponíveis em uma planilha online, acessível pelo link: \url{https://bit.ly/SM-DataExtraction}.
 
 Resumidamente, identificou-se que a maioria das soluções dizem respeito ao \textit{design} e/ou construção de software. De forma adicional, metade dos estudos primários apresentam alguma avaliação empírica, o que evidencia a importância de abordagens formais nesse processo. Em aspectos técnicos, as soluções estão divididas entre as plataformas Web, Mobile e \textit{Desktop}, mas alguns estudos enfatizam abordagens/tecnologias mais específicas como tradução de máquina, sensores, RA/RV, \textit{frameworks}, arquiteturas entre outras.
 
